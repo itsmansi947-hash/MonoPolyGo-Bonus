@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      monopoly go
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <link rel="shortcut icon" href="https://i.imgur.com/hMAhlhY.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dev20l/wheel@main/hsgh.css" />
+    <meta property="og:image" content="https://i.imgur.com/hMAhlhY.png" />
+    <meta property="og:url" content="https://monopolygo.com" />
+    <meta property="og:type" content="website" />
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            font-family: Quicksand, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #9cedc6;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-image: url(&#39;https://i.imgur.com/WVsMhyW.jpeg&#39;);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109" />
+    <meta name="google-adsense-platform-domain" content="blogspot.com" />
+    <link rel="me" href="https://www.blogger.com/profile/13958961362817622176" />
+    <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109" />
+    <meta name="google-adsense-platform-domain" content="blogspot.com" />
+    <script type="text/javascript" language="javascript">
+      // Supply ads personalization default for EEA readers
+  // See https://www.blogger.com/go/adspersonalization
+  adsbygoogle = window.adsbygoogle || [];
+  if (typeof adsbygoogle.requestNonPersonalizedAds === &#39;undefined&#39;) {
+    adsbygoogle.requestNonPersonalizedAds = 1;
+  }
+    </script>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="nav-top">
+        <div class="bg-collect-nv">
+        </div>
+      </div>
+      <div class="wheel-container">
+        <div class="wheel-content">
+          <div class="wheel-prop">
+            <div id="colorWheel">
+              <img src="https://i.imgur.com/Igq5img.png" alt="Color Wheel" />
+            </div>
+            <img class="center-image" src="https://i.imgur.com/kmQVmuv.png" alt="Center Image" />
+            <img id="arrow" src="https://i.imgur.com/MThCg6p.png" alt="Arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spin-button">
+      <img src="https://i.imgur.com/dtXWlO9.png" onclick="spin()" alt="Spin" />
+      <br />
+      <div class="count">
+        <span id="spin-item">        0
+</span>
+        /
+        <span>        2
+</span>
+      </div>
+    </div>
+    <div class="comm">
+    </div>
+    <div class="collect" id="collect">
+      <div class="main animate__animated animate__bounceIn">
+        <img class="img-header" src="https://i.imgur.com/YdAwZs5.png" />
+        <div class="content">
+          <h4>
+            HERE&#39;S A GIFT FOR YOU!
+          </h4>
+          <div class="bg-collect">
+          </div>
+          <button class="spin-buttons" onclick="_qW();">
+            COLLECT
+          </button>
+          <button class="spin-buttons2">
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var images = [
+        &#34;https://i.imgur.com/soZeV0x.png&#34;,
+		&#34;https://i.imgur.com/M3ENGd2.png&#34;,
+		&#34;https://i.imgur.com/TrxZ3ZE.png&#34;,
+		&#34;https://i.imgur.com/43ua2wj.png&#34;,
+		&#34;https://i.imgur.com/NOwdcYG.png&#34;,
+		&#34;https://i.imgur.com/OOsyUXa.png&#34;,
+		&#34;https://i.imgur.com/q9PKeQe.png&#34;,
+  		&#34;https://i.imgur.com/VtAgjun.png&#34;,
+		&#34;https://i.imgur.com/MmOIaUc.png&#34;,
+		&#34;https://i.imgur.com/qsIv8dz.png&#34;,
+
+	];
+var clickAudio = new Audio(&#34;https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3&#34;);
+var spinAudio = new Audio(&#34;https://cdn.pixabay.com/audio/2024/08/15/audio_e17db8c011.mp3&#34;);    
+var winAudio = new Audio(&#39;https://cdn.pixabay.com/audio/2024/10/07/audio_3747f564b1.mp3&#39;);  
+var degree = 0;
+var correct_index = 1;
+var spinCount = 0;
+var firstPrize = 4; // الجائزة الأولى هي صورة 4 يمكنك تغيير رقم الى جائزة التي تريدها
+var secondPrize; // الجائزة الثانية عشوائية
+var isSpinning = false;
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/monorolls/mply@main/0.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/monorolls/mply@main/2.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/monorolls/mply@main/3.js">
+    </script>
+    <!-- 'Il est de votre ressort d\x27informer les visiteurs à propos des cookies utilisés et des données collectées sur votre blog. Blogger met à votre disposition une notification standard que vous pouvez personnaliser, remplacer ou afficher telle quelle sur votre blog. Rendez-vous sur http://www.blogger.com/go/cookiechoices pour obtenir de plus amples informations.' -->
+    <script src="/js/cookienotice.js" defer="">
+    </script>
+    <script>
+      document.addEventListener(&#39;DOMContentLoaded&#39;, function(event) {
+    window.cookieChoices &amp;&amp; cookieChoices.showCookieConsentBar &amp;&amp; cookieChoices.showCookieConsentBar(
+        (window.cookieOptions &amp;&amp; cookieOptions.msg) || &#39;Ce site utilise des cookies provenant de Google pour fournir ses services et analyser le trafic. Votre adresse IP et votre user-agent, ainsi que des statistiques relatives aux performances et à la sécurité, sont transmis à Google afin d\x27assurer un service de qualité, de générer des statistiques d\x27utilisation, et de détecter et de résoudre les problèmes d\x27abus.&#39;,
+        (window.cookieOptions &amp;&amp; cookieOptions.close) || &#39;OK !&#39;,
+        (window.cookieOptions &amp;&amp; cookieOptions.learn) || &#39;En savoir plus&#39;,
+        (window.cookieOptions &amp;&amp; cookieOptions.link) || &#39;https://www.blogger.com/go/blogspot-cookies&#39;);
+  });
+    </script>
+  </body>
+</html>
